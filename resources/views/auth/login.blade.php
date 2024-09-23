@@ -80,14 +80,14 @@
 
                                         <!-- Email Address -->
                                         <div class="fv-row mb-8">
-                                            <x-input-label for="email" :value="__('Email')" />
+                                            <x-input-label />
                                             <x-text-input placeholder="Email" type="email" name="email" :value="old('email')" required autofocus autocomplete="username"  class="form-control bg-transparent" />
                                             <x-input-error :messages="$errors->get('email')" class="mt-2" />
                                         </div>
 
                                         <!-- Password -->
                                         <div class="fv-row mb-3">
-                                            <x-input-label for="password" :value="__('Password')" />
+                                            <x-input-label />
 
                                             <x-text-input placeholder="Password" class="form-control bg-transparent"
                                                             type="password"
