@@ -13,6 +13,11 @@ License: For each use you must have a valid license purchased only from above li
 <html lang="en">
 	<!--begin::Head-->
 	<head>
+		<style>
+			a:link {color: #ffffff;}
+a:visited {color: #ffffff;}
+a:hover {color: yellow;}
+</style>
 <base href="../" />
 		<title>Keen - Multi-demo Bootstrap 5 HTML Admin Dashboard Template by KeenThemes</title>
 		<meta charset="utf-8" />
@@ -59,10 +64,10 @@ License: For each use you must have a valid license purchased only from above li
 								<!--begin::Menu-->
 								<ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
 									<li class="menu-item">
-										<a href="login" target="_blank" class="menu-link px-2">Login</a>
+										<a href="login" target="_blank" class="btn btn-success btn-sm ">Login</a>
 									</li>
 									<li class="menu-item">
-										<a href="register" target="_blank" class="menu-link px-2">Register</a>
+										<a href="register" target="_blank" class="btn btn-danger btn-sm">Register</a>
 									</li>
 								</ul>
 								<!--end::Menu-->
