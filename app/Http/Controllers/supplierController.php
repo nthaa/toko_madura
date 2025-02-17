@@ -1,16 +1,17 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Suppliermodel;
+
+use App\Models\Supplier;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Collection;
 
-class supplierController extends Controller
+class SupplierController extends Controller
 {
     public function index(){
-        // $supplier=Suppliermodel::all();
-        $supplier=Suppliermodel::simplePaginate(5);
+        // $supplier=Supplier::all();
+        $supplier=Supplier::simplePaginate(5);
         // return view('supplier.supplier', compact('supplier'));
         return view('supplier.supplier', ['supplier'=>$supplier]);
     }
@@ -23,7 +24,7 @@ class supplierController extends Controller
             'no_telp' => 'required'
         ]);
 
-        $supplier=Suppliermodel::create([
+        $supplier=Supplier::create([
             'nama' => $request->nama,
             'toko' => $request->toko,
             'alamat' => $request->alamat,
@@ -33,14 +34,14 @@ class supplierController extends Controller
     }
 
     public function hapus($id){
-        $supplier=suppliermodel::find($id);
+        $supplier=Supplier::find($id);
         $supplier->delete();
         return redirect()->route('tampilsupplier')->with(['success' => 'Data berhasil dihapus!']);
     }
 
     public function update(Request $request){
         $id=$request->input("id_supplier");
-        $supplier=suppliermodel::findOrFail($id);
+        $supplier=Supplier::findOrFail($id);
         $supplier->update([
             'nama' =>$request->nama,
             'toko' =>$request->toko,
@@ -51,7 +52,7 @@ class supplierController extends Controller
     }
 
     public function edit($id){
-        return view("supplier.edit",['id' =>$id]); 
+        return view("supplier.edit",['id' =>$id]);
     }
 
     public function tampilsupplier(){

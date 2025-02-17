@@ -55,108 +55,10 @@
 													<!--end:Menu link-->
 												</div>
 												<!--end:Menu item-->
-												<!--begin:Menu item-->
-												<div class="menu-item">
-													<!--begin:Menu link-->
-													<a class="menu-link" href="dashboards/projects.html">
-														<span class="menu-bullet">
-															<span class="bullet bullet-dot"></span>
-														</span>
-														<span class="menu-title">Projects</span>
-													</a>
-													<!--end:Menu link-->
-												</div>
-												<!--end:Menu item-->
-												<!--begin:Menu item-->
-												<div class="menu-item">
-													<!--begin:Menu link-->
-													<a class="menu-link" href="dashboards/ecommerce.html">
-														<span class="menu-bullet">
-															<span class="bullet bullet-dot"></span>
-														</span>
-														<span class="menu-title">eCommerce</span>
-													</a>
-													<!--end:Menu link-->
-												</div>
-												<!--end:Menu item-->
-												<!--begin:Menu item-->
-												<div class="menu-item">
-													<!--begin:Menu link-->
-													<a class="menu-link" href="dashboards/marketing.html">
-														<span class="menu-bullet">
-															<span class="bullet bullet-dot"></span>
-														</span>
-														<span class="menu-title">Marketing</span>
-													</a>
-													<!--end:Menu link-->
-												</div>
-												<!--end:Menu item-->
-												<div class="menu-inner flex-column collapse" id="kt_app_sidebar_menu_dashboards_collapse">
-													<!--begin:Menu item-->
-													<div class="menu-item">
-														<!--begin:Menu link-->
-														<a class="menu-link" href="dashboards/social.html">
-															<span class="menu-bullet">
-																<span class="bullet bullet-dot"></span>
-															</span>
-															<span class="menu-title">Social</span>
-														</a>
-														<!--end:Menu link-->
-													</div>
-													<!--end:Menu item-->
-													<!--begin:Menu item-->
-													<div class="menu-item">
-														<!--begin:Menu link-->
-														<a class="menu-link" href="dashboards/bidding.html">
-															<span class="menu-bullet">
-																<span class="bullet bullet-dot"></span>
-															</span>
-															<span class="menu-title">Bidding</span>
-														</a>
-														<!--end:Menu link-->
-													</div>
-													<!--end:Menu item-->
-													<!--begin:Menu item-->
-													<div class="menu-item">
-														<!--begin:Menu link-->
-														<a class="menu-link" href="dashboards/online-courses.html">
-															<span class="menu-bullet">
-																<span class="bullet bullet-dot"></span>
-															</span>
-															<span class="menu-title">Online Courses</span>
-														</a>
-														<!--end:Menu link-->
-													</div>
-													<!--end:Menu item-->
-													<!--begin:Menu item-->
-													<div class="menu-item">
-														<!--begin:Menu link-->
-														<a class="menu-link" href="dashboards/logistics.html">
-															<span class="menu-bullet">
-																<span class="bullet bullet-dot"></span>
-															</span>
-															<span class="menu-title">Logistics</span>
-														</a>
-														<!--end:Menu link-->
-													</div>
-													<!--end:Menu item-->
-												</div>
-												<div class="menu-item">
-													<div class="menu-content">
-														<a class="btn btn-flex btn-color-gray-500 btn-icon-gray-500 d-flex flex-stack fs-base p-0 ms-2 mb-2 toggle collapsible collapsed" data-bs-toggle="collapse" href="#kt_app_sidebar_menu_dashboards_collapse" data-kt-toggle-text="Show Less">
-															<span data-kt-toggle-text-target="true">Show 4 More</span>
-															<i class="ki-duotone ki-minus-square toggle-on fs-2 me-0 pe-0">
-																<span class="path1"></span>
-																<span class="path2"></span>
-															</i>
-															<i class="ki-duotone ki-plus-square toggle-off fs-2 me-0 pe-0">
-																<span class="path1"></span>
-																<span class="path2"></span>
-																<span class="path3"></span>
-															</i>
-														</a>
-													</div>
-												</div>
+
+
+
+
 											</div>
 											<!--end:Menu sub-->
 										</div>
@@ -212,10 +114,10 @@
 												</div>
 												<!--end:Menu item-->
 												<!--begin:Menu item-->
-												
+
 												<!--end:Menu item-->
 												<!--begin:Menu item-->
-												
+
 												<!--end:Menu item-->
 											</div>
 											<!--end:Menu sub-->
@@ -264,26 +166,26 @@
 												</div>
 												<!--end:Menu item-->
 												<!--begin:Menu item-->
-												
+
 												<!--end:Menu item-->
 											</div>
 											<!--end:Menu sub-->
 										</div>
 										<!--end:Menu item-->
 										<!--begin:Menu item-->
-										
+
 										<!--end:Menu item-->
 										<!--begin:Menu item-->
-										
+
 										<!--end:Menu item-->
 										<!--begin:Menu item-->
-										
+
 										<!--end:Menu item-->
 										<!--begin:Menu item-->
-										
+
 										<!--end:Menu item-->
 										<!--begin:Menu item-->
-										
+
 										<!--end:Menu item-->
 										<!--begin:Menu item-->
 
@@ -291,8 +193,8 @@
 										<!--begin:Menu item-->
 										<div class="menu-item pt-5">
 											<!--begin:Menu content-->
-											
-											
+
+
 											<!--end:Menu link-->
 										</div>
 										<!--end:Menu item-->

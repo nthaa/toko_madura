@@ -46,7 +46,7 @@ License: For each use you must have a valid license purchased only from above li
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
-	
+
 	<body id="kt_app_body" data-kt-app-layout="dark-sidebar" data-kt-app-header-fixed="true" data-kt-app-sidebar-enabled="true" data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-hoverable="true" data-kt-app-sidebar-push-header="true" data-kt-app-sidebar-push-toolbar="true" data-kt-app-sidebar-push-footer="true" data-kt-app-toolbar-enabled="true" class="app-default">
 		<!--begin::Theme mode setup on page load-->
 		@extends('produk.produkTampilan')
@@ -104,7 +104,7 @@ License: For each use you must have a valid license purchased only from above li
 									</div>
 									<!--end::Page title-->
 									<!--begin::Actions-->
-									
+
 									<!--end::Actions-->
 								</div>
 								<!--end::Toolbar container-->
@@ -197,7 +197,7 @@ License: For each use you must have a valid license purchased only from above li
 													<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#insert">
 													<i class="ki-duotone ki-plus fs-2"></i>Add Produk</button>
 													<!--end::Add user-->
-													
+
 												</div>
 												<!--end::Toolbar-->
 												<!--begin::Group actions-->
@@ -270,7 +270,7 @@ License: For each use you must have a valid license purchased only from above li
 																		<button type="reset" class="btn btn-light me-3" data-kt-users-modal-action="cancel">Discard</button>
 																		<button type="submit" class="btn btn-primary" >
 																			<span class="indicator-label">Submit</span>
-																			<span class="indicator-progress">Please wait... 
+																			<span class="indicator-progress">Please wait...
 																			<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 																		</button>
 																	</div>
@@ -418,13 +418,13 @@ License: For each use you must have a valid license purchased only from above li
 																		<button type="reset" class="btn btn-light me-3" data-kt-users-modal-action="cancel">Discard</button>
 																		<button type="submit" class="btn btn-primary">
 																			<span class="indicator-label">Submit</span>
-																			<span class="indicator-progress">Please wait... 
+																			<span class="indicator-progress">Please wait...
 																			<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 																		</button>
 																	</div>
 																	<!--end::Actions-->
 																</form>
-																
+
 																<!--end::Form-->
 															</div>
 															<!--end::Modal body-->
@@ -441,7 +441,7 @@ License: For each use you must have a valid license purchased only from above li
 														<div class="modal-content">
 															<!--begin::Form-->
 															<form id="ajax-form-update" method="post" class="form"  id="kt_modal_update_user_form" action="{{route('updateproduk')}}">
-															@csrf	
+															@csrf
 															<!--begin::Modal header-->
 																<div class="modal-header" id="kt_modal_update_user_header">
 																	<!--begin::Modal title-->
@@ -567,10 +567,10 @@ License: For each use you must have a valid license purchased only from above li
 																					{{ $message }}
 																				@enderror
 																			</div>
-																			
+
 																		</div>
 																	</div>
-																</div>	
+																</div>
 																<!--end::User form-->
 																<div class="modal-footer flex-center">
 																	<!--begin::Button-->
@@ -579,7 +579,7 @@ License: For each use you must have a valid license purchased only from above li
 																	<!--begin::Button-->
 																	<button type="submit" class="btn btn-primary" data-kt-users-modal-action="submit">
 																		<span class="indicator-label">Submit</span>
-																		<span class="indicator-progress">Please wait... 
+																		<span class="indicator-progress">Please wait...
 																		<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 																	</button>
 																	<!--end::Button-->
@@ -589,15 +589,15 @@ License: For each use you must have a valid license purchased only from above li
 													</div>
 												</div>
 												<!--end::Scroll-->
-													
+
 													<!--end::Modal body-->
 													<!--begin::Modal footer-->
-												
+
 													<!--end::Modal footer-->
-												
+
 												<!--end::Form-->
-											
-											
+
+
 											<!--end::Card toolbar-->
 										</div>
 										<!--end::Card header-->
@@ -608,7 +608,7 @@ License: For each use you must have a valid license purchased only from above li
 											<table class="table align-middle table-row-dashed fs-6 gy-5" >
 												<thead>
 													<tr class="text-start text-muted fw-bold fs-7 text-uppercase gs-0">
-								
+
 														<th class="min-w-125px">ID Produk</th>
 														<th class="min-w-125px">Nama Produk</th>
 														<th class="min-w-125px">Harga Beli</th>
@@ -622,7 +622,7 @@ License: For each use you must have a valid license purchased only from above li
 												<tbody class="text-gray-600 fw-semibold">
 
 													@php($i=1)
-													
+
 													@foreach($produk as $produk)
 														<tr>
 															<td>
@@ -647,13 +647,13 @@ License: For each use you must have a valid license purchased only from above li
 																<div id="barcode{{$produk->id_produk}}">{{$produk->barcode}}</div>
 															</td>
 															<td class="text-end">
-																<a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+																<a href="#" class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
 																<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
 																<!--begin::Menu-->
 																<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
 																	<!--begin::Menu item-->
 																	<div class="menu-item px-3">
-																		<a href="#" class="menu-link px-3" data-bs-toggle="modal" data-bs-target="#kt_modal_update_details" onclick="lempar({{$produk->id_produk}})" >Edit</a>	
+																		<a href="#" class="menu-link px-3" data-bs-toggle="modal" data-bs-target="#kt_modal_update_details" onclick="lempar({{$produk->id_produk}})" >Edit</a>
 																	</div>
 
 																	<!--end::Menu item-->
@@ -666,7 +666,7 @@ License: For each use you must have a valid license purchased only from above li
 																<!--end::Menu-->
 															</td>
 														</tr>
-														
+
 													@php($i++)
 													@endforeach
 												</tbody>
@@ -994,8 +994,8 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Timeline heading-->
 									<div class="pe-3 mb-5">
 										<!--begin::Title-->
-										<div class="fs-5 fw-semibold mb-2">Task 
-										<a href="#" class="text-primary fw-bold me-1">#45890</a>merged with 
+										<div class="fs-5 fw-semibold mb-2">Task
+										<a href="#" class="text-primary fw-bold me-1">#45890</a>merged with
 										<a href="#" class="text-primary fw-bold me-1">#45890</a>in “Ads Pro Admin Dashboard project:</div>
 										<!--end::Title-->
 										<!--begin::Description-->
@@ -1120,7 +1120,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Timeline heading-->
 									<div class="pe-3 mb-5">
 										<!--begin::Title-->
-										<div class="fs-5 fw-semibold mb-2">New case 
+										<div class="fs-5 fw-semibold mb-2">New case
 										<a href="#" class="text-primary fw-bold me-1">#67890</a>is assigned to you in Multi-platform Database Design project</div>
 										<!--end::Title-->
 										<!--begin::Description-->
@@ -1229,7 +1229,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Timeline heading-->
 									<div class="pe-3 mb-5">
 										<!--begin::Title-->
-										<div class="fs-5 fw-semibold mb-2">New order 
+										<div class="fs-5 fw-semibold mb-2">New order
 										<a href="#" class="text-primary fw-bold me-1">#67890</a>is placed for Workshow Planning & Budget Estimation</div>
 										<!--end::Title-->
 										<!--begin::Description-->
@@ -1256,7 +1256,7 @@ License: For each use you must have a valid license purchased only from above li
 				<!--end::Body-->
 				<!--begin::Footer-->
 				<div class="card-footer py-5 text-center" id="kt_activities_footer">
-					<a href="pages/user-profile/activity.html" class="btn btn-bg-body text-primary">View All Activities 
+					<a href="pages/user-profile/activity.html" class="btn btn-bg-body text-primary">View All Activities
 					<i class="ki-duotone ki-arrow-right fs-3 text-primary">
 						<span class="path1"></span>
 						<span class="path2"></span>
@@ -1265,7 +1265,7 @@ License: For each use you must have a valid license purchased only from above li
 				<!--end::Footer-->
 			</div>
 		</div>
-		
+
 		<!--end::Activities drawer-->
 		<!--begin::Chat drawer-->
 		<div id="kt_drawer_chat" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="chat" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'300px', 'md': '500px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_drawer_chat_toggle" data-kt-drawer-close="#kt_drawer_chat_close">
@@ -1314,7 +1314,7 @@ License: For each use you must have a valid license purchased only from above li
 								<!--end::Menu item-->
 								<!--begin::Menu item-->
 								<div class="menu-item px-3">
-									<a href="#" class="menu-link flex-stack px-3" data-bs-toggle="modal" data-bs-target="#kt_modal_invite_friends">Invite Contacts 
+									<a href="#" class="menu-link flex-stack px-3" data-bs-toggle="modal" data-bs-target="#kt_modal_invite_friends">Invite Contacts
 									<span class="ms-2" data-bs-toggle="tooltip" title="Specify a contact email to send an invitation">
 										<i class="ki-duotone ki-information fs-7">
 											<span class="path1"></span>
@@ -1500,7 +1500,7 @@ License: For each use you must have a valid license purchased only from above li
 								</div>
 								<!--end::User-->
 								<!--begin::Text-->
-								<div class="p-5 rounded bg-light-info text-gray-900 fw-semibold mw-lg-400px text-start" data-kt-element="message-text">You can unwatch this repository immediately by clicking here: 
+								<div class="p-5 rounded bg-light-info text-gray-900 fw-semibold mw-lg-400px text-start" data-kt-element="message-text">You can unwatch this repository immediately by clicking here:
 								<a href="https://keenthemes.com">Keenthemes.com</a></div>
 								<!--end::Text-->
 							</div>
@@ -1973,7 +1973,7 @@ License: For each use you must have a valid license purchased only from above li
 						<!--begin::Heading-->
 						<div class="mb-13 text-center">
 							<h1 class="mb-3">Upgrade a Plan</h1>
-							<div class="text-muted fw-semibold fs-5">If you need more info, please check 
+							<div class="text-muted fw-semibold fs-5">If you need more info, please check
 							<a href="#" class="link-primary fw-bold">Pricing Guidelines</a>.</div>
 						</div>
 						<!--end::Heading-->
@@ -2012,7 +2012,7 @@ License: For each use you must have a valid license purchased only from above li
 											<div class="ms-5">
 												<span class="mb-2">$</span>
 												<span class="fs-3x fw-bold" data-kt-plan-price-month="39" data-kt-plan-price-annual="399">39</span>
-												<span class="fs-7 opacity-50">/ 
+												<span class="fs-7 opacity-50">/
 												<span data-kt-element="period">Mon</span></span>
 											</div>
 											<!--end::Price-->
@@ -2039,7 +2039,7 @@ License: For each use you must have a valid license purchased only from above li
 											<div class="ms-5">
 												<span class="mb-2">$</span>
 												<span class="fs-3x fw-bold" data-kt-plan-price-month="339" data-kt-plan-price-annual="3399">339</span>
-												<span class="fs-7 opacity-50">/ 
+												<span class="fs-7 opacity-50">/
 												<span data-kt-element="period">Mon</span></span>
 											</div>
 											<!--end::Price-->
@@ -2056,7 +2056,7 @@ License: For each use you must have a valid license purchased only from above li
 												<!--end::Radio-->
 												<!--begin::Info-->
 												<div class="flex-grow-1">
-													<div class="d-flex align-items-center fs-2 fw-bold flex-wrap">Enterprise 
+													<div class="d-flex align-items-center fs-2 fw-bold flex-wrap">Enterprise
 													<span class="badge badge-light-success ms-2 py-2 px-3 fs-7">Popular</span></div>
 													<div class="fw-semibold opacity-75">Best value for 1000+ team</div>
 												</div>
@@ -2067,7 +2067,7 @@ License: For each use you must have a valid license purchased only from above li
 											<div class="ms-5">
 												<span class="mb-2">$</span>
 												<span class="fs-3x fw-bold" data-kt-plan-price-month="999" data-kt-plan-price-annual="9999">999</span>
-												<span class="fs-7 opacity-50">/ 
+												<span class="fs-7 opacity-50">/
 												<span data-kt-element="period">Mon</span></span>
 											</div>
 											<!--end::Price-->
@@ -2429,7 +2429,7 @@ License: For each use you must have a valid license purchased only from above li
 								<span class="indicator-label">Upgrade Plan</span>
 								<!--end::Indicator label-->
 								<!--begin::Indicator progress-->
-								<span class="indicator-progress">Please wait... 
+								<span class="indicator-progress">Please wait...
 								<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 								<!--end::Indicator progress-->
 							</button>
@@ -2506,7 +2506,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--begin::Heading-->
 										<div class="pb-10 pb-lg-15">
 											<!--begin::Title-->
-											<h2 class="fw-bold d-flex align-items-center text-gray-900">Setup Campaign Details 
+											<h2 class="fw-bold d-flex align-items-center text-gray-900">Setup Campaign Details
 											<span class="ms-1" data-bs-toggle="tooltip" title="Campaign name will be used as reference within your campaign reports">
 												<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
 													<span class="path1"></span>
@@ -2516,7 +2516,7 @@ License: For each use you must have a valid license purchased only from above li
 											</span></h2>
 											<!--end::Title-->
 											<!--begin::Notice-->
-											<div class="text-muted fw-semibold fs-6">If you need more info, please check out 
+											<div class="text-muted fw-semibold fs-6">If you need more info, please check out
 											<a href="#" class="link-primary fw-bold">Help Page</a>.</div>
 											<!--end::Notice-->
 										</div>
@@ -2700,7 +2700,7 @@ License: For each use you must have a valid license purchased only from above li
 											<h1 class="fw-bold text-gray-900">Upload Files</h1>
 											<!--end::Title-->
 											<!--begin::Description-->
-											<div class="text-muted fw-semibold fs-4">If you need more info, please check 
+											<div class="text-muted fw-semibold fs-4">If you need more info, please check
 											<a href="#" class="link-primary">Campaign Guidelines</a></div>
 											<!--end::Description-->
 										</div>
@@ -2915,7 +2915,7 @@ License: For each use you must have a valid license purchased only from above li
 											<h1 class="fw-bold text-gray-900">Configure Audiences</h1>
 											<!--end::Title-->
 											<!--begin::Description-->
-											<div class="text-muted fw-semibold fs-4">If you need more info, please check 
+											<div class="text-muted fw-semibold fs-4">If you need more info, please check
 											<a href="#" class="link-primary">Campaign Guidelines</a></div>
 											<!--end::Description-->
 										</div>
@@ -2923,7 +2923,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--begin::Input group-->
 										<div class="fv-row mb-10">
 											<!--begin::Label-->
-											<label class="fs-6 fw-semibold mb-2">Gender 
+											<label class="fs-6 fw-semibold mb-2">Gender
 											<span class="ms-1" data-bs-toggle="tooltip" title="Show your ads to either men or women, or select 'All' for both">
 												<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
 													<span class="path1"></span>
@@ -2995,7 +2995,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--begin::Input group-->
 										<div class="fv-row mb-10">
 											<!--begin::Label-->
-											<label class="fs-6 fw-semibold mb-2">Age 
+											<label class="fs-6 fw-semibold mb-2">Age
 											<span class="ms-1" data-bs-toggle="tooltip" title="Select the minimum and maximum age of the people who will find your ad relevant.">
 												<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
 													<span class="path1"></span>
@@ -3016,7 +3016,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--begin::Input group-->
 										<div class="fv-row mb-10">
 											<!--begin::Label-->
-											<label class="fs-6 fw-semibold mb-2">Location 
+											<label class="fs-6 fw-semibold mb-2">Location
 											<span class="ms-1" data-bs-toggle="tooltip" title="Enter one or more location points for more specific targeting.">
 												<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
 													<span class="path1"></span>
@@ -3044,7 +3044,7 @@ License: For each use you must have a valid license purchased only from above li
 											<h1 class="fw-bold text-gray-900">Budget Estimates</h1>
 											<!--end::Title-->
 											<!--begin::Description-->
-											<div class="text-muted fw-semibold fs-4">If you need more info, please check 
+											<div class="text-muted fw-semibold fs-4">If you need more info, please check
 											<a href="#" class="link-primary">Campaign Guidelines</a></div>
 											<!--end::Description-->
 										</div>
@@ -3052,7 +3052,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--begin::Input group-->
 										<div class="fv-row mb-10">
 											<!--begin::Label-->
-											<label class="fs-6 fw-semibold mb-2">Campaign Duration 
+											<label class="fs-6 fw-semibold mb-2">Campaign Duration
 											<span class="ms-1" data-bs-toggle="tooltip" title="Choose how long you want your ad to run for">
 												<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
 													<span class="path1"></span>
@@ -3083,7 +3083,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--begin::Input group-->
 										<div class="fv-row mb-10">
 											<!--begin::Label-->
-											<label class="fs-6 fw-semibold mb-2">Daily Budget 
+											<label class="fs-6 fw-semibold mb-2">Daily Budget
 											<span class="ms-1" data-bs-toggle="tooltip" title="Choose the budget allocated for each day. Higher budget will generate better results">
 												<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
 													<span class="path1"></span>
@@ -3150,15 +3150,15 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Wrapper-->
 									<div>
 										<button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="submit">
-											<span class="indicator-label">Submit 
+											<span class="indicator-label">Submit
 											<i class="ki-duotone ki-arrow-right fs-3 ms-2 me-0">
 												<span class="path1"></span>
 												<span class="path2"></span>
 											</i></span>
-											<span class="indicator-progress">Please wait... 
+											<span class="indicator-progress">Please wait...
 											<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 										</button>
-										<button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="next">Continue 
+										<button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="next">Continue
 										<i class="ki-duotone ki-arrow-right fs-3 ms-1 me-0">
 											<span class="path1"></span>
 											<span class="path2"></span>
@@ -4000,7 +4000,7 @@ License: For each use you must have a valid license purchased only from above li
 							<h1 class="mb-3">Invite a Friend</h1>
 							<!--end::Title-->
 							<!--begin::Description-->
-							<div class="text-muted fw-semibold fs-5">If you need more info, please check out 
+							<div class="text-muted fw-semibold fs-5">If you need more info, please check out
 							<a href="#" class="link-primary fw-bold">FAQ Page</a>.</div>
 							<!--end::Description-->
 						</div>
@@ -4533,11 +4533,11 @@ License: For each use you must have a valid license purchased only from above li
 		<script>
 		$('#ajax-form').submit(function(e) {
         e.preventDefault();
- 
+
         var url = $(this).attr("action");
 		let formData = new FormData(this);
         // $('#saveBtn').html('Sending...');
-  
+
         $.ajax({
                 type:'POST',
                 url: url,
@@ -4556,15 +4556,15 @@ License: For each use you must have a valid license purchased only from above li
                 }
            });
       });
-	  
+
 	  $('#ajax-form-update').submit(function(e) {
-		
+
         // e.preventDefault();
- 
+
         // var url = $(this).attr("action");
 		// let formData = new FormData(this);
         // // $('#saveBtn').html('Sending...');
-  
+
         // $.ajax({
         //         type:'POST',
         //         url: url,
@@ -4583,7 +4583,7 @@ License: For each use you must have a valid license purchased only from above li
         //         }
         //    });
       });
-	  
+
 	  	function lempar(a){
 			document.getElementById("id").value=document.getElementById("id"+a).innerHTML;
 				document.getElementById("nama_produk_update").value=document.getElementById("nama_produk"+a).innerHTML;
@@ -4595,15 +4595,15 @@ License: For each use you must have a valid license purchased only from above li
 
 		}
 
-		// function showCurrentTime() { 
-		// 	const now = new Date(); 
-		// 	const hours = now.getHours(); 
-		// 	const minutes = now.getMinutes(); 
-		// 	const seconds = now.getSeconds(); 
+		// function showCurrentTime() {
+		// 	const now = new Date();
+		// 	const hours = now.getHours();
+		// 	const minutes = now.getMinutes();
+		// 	const seconds = now.getSeconds();
 		// 	const formattedTime = `${hours}:${minutes}:${seconds}`;
 
-		// 	document.getElementById('time').innerText = formattedTime; 
-		// } 
+		// 	document.getElementById('time').innerText = formattedTime;
+		// }
 		// setInterval(showCurrentTime, 1000);
 
 		</script>

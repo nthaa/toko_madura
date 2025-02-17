@@ -4,12 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Pagination\LengthAwarePaginator;
 
-class Suppliermodel extends Model
+class Supplier extends Model
 {
     use HasFactory;
-    protected $table = 'supplier';
+    protected $table = 'suppliers';
     protected $primaryKey = 'id_supplier';
-    protected $fillable = ['nama_produk', 'toko', 'alamat', 'no_telp'];
+    protected $fillable = ['nama', 'toko', 'alamat', 'no_telp'];
 }

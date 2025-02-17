@@ -1,17 +1,18 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\ProdukModel;
+
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\View\View;
 
-class ProdukController extends Controller
+class ProductController extends Controller
 {
     public function index(){
-        // $produk=ProdukModel::all();
-        $produk=ProdukModel::simplePaginate(5);
+        // $produk=Produk::all();
+        $produk=Product::simplePaginate(5);
         return view('produk.produk', ['produk'=>$produk]);
     }
 
@@ -25,7 +26,7 @@ class ProdukController extends Controller
             'barcode' => 'required'
         ]);
 
-        $produk=ProdukModel::create([
+        $produk=Product::create([
             'nama_produk' => $request->nama_produk,
             'harga_beli' => $request->harga_beli,
             'harga_jual' => $request->harga_jual,
@@ -37,14 +38,14 @@ class ProdukController extends Controller
     }
 
     public function hapus($id){
-        $produk=produkmodel::find($id);
+        $produk=Product::find($id);
         $produk->delete();
         return redirect()->route('tampilproduk')->with(['success' => 'Data berhasil dihapus!']);
     }
 
     public function update(Request $request){
         $id=$request->input("id_produk");
-        $produk=produkmodel::findOrFail($id);
+        $produk=Product::findOrFail($id);
         $produk->update([
             'nama_produk' =>$request->nama_produk,
             'harga_beli' =>$request->harga_beli,
@@ -57,7 +58,7 @@ class ProdukController extends Controller
     }
 
     public function edit($id){
-        return view("supplier.edit",['id' =>$id]); 
+        return view("produk.edit",['id' =>$id]);
     }
 
     public function tampilproduk(){
